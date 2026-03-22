@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceXplore - अंतरिक्ष यात्रा 🚀</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Stars Background -->
+    <div class="stars"></div>
+    <div class="stars2"></div>
+    <div class="stars3"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>🌌 SpaceXplore</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#facts">Facts</a></li>
+                <li><a href="#planets">Planets</a></li>
+                <li><a href="#galaxy">Galaxy</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Explore the Universe 🚀</h1>
+            <p class="hero-desc">Discover secrets of space. Amazing facts about planets, stars & galaxies!</p>
+            <button class="cta-btn" onclick="scrollToSection('facts')">Discover Facts</button>
+        </div>
+        <div class="spaceship">
+            <div class="spaceship-body"></div>
+            <div class="spaceship-wing"></div>
+            <div class="spaceship-flame"></div>
+        </div>
+    </section>
+
+    <!-- SPACE FACTS SECTION - NEW! -->
+    <section id="facts" class="facts">
+        <div class="container">
+            <h2 class="section-title">🔥 Mind-Blowing Space Facts</h2>
+            <div class="facts-grid">
+                <div class="fact-card" data-aos="fade-up">
+                    <div class="fact-icon">🌟</div>
+                    <h3>1 Billion Stars</h3>
+                    <p>Our Milky Way galaxy contains 100-400 billion stars!</p>
+                </div>
+                <div class="fact-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="fact-icon">⚡</div>
+                    <h3>Light Speed Limit</h3>
+                    <p>Nothing can travel faster than 299,792 km/s - speed of light!</p>
+                </div>
+                <div class="fact-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="fact-icon">🪐</div>
+                    <h3>Jupiter's Storm</h3>
+                    <p>The Great Red Spot storm has raged for 400+ years!</p>
+                </div>
+                <div class="fact-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="fact-icon">🌑</div>
+                    <h3>No Sound in Space</h3>
+                    <p>Space is a vacuum - sound waves can't travel through it!</p>
+                </div>
+                <div class="fact-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="fact-icon">☀️</div>
+                    <h3>Sun's Power</h3>
+                    <p>Sun produces 3.8 × 10²⁶ watts of energy every second!</p>
+                </div>
+                <div class="fact-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="fact-icon">🌌</div>
+                    <h3>Universe Expanding</h3>
+                    <p>Universe is expanding at 73 km/s per megaparsec!</p>
+                </div>
+                <div class="fact-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="fact-icon">🛸</div>
+                    <h3>Neutron Star</h3>
+                    <p>One teaspoon of neutron star = 6 billion tons weight!</p>
+                </div>
+                <div class="fact-card" data-aos="fade-up" data-aos-delay="700">
+                    <div class="fact-icon">💎</div>
+                    <h3>Diamond Rain</h3>
+                    <p>It rains diamonds on Uranus & Neptune!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planets Section -->
+    <section id="planets" class="planets">
+        <div class="container">
+            <h2 class="section-title">Solar System Planets</h2>
+            <div class="planets-grid">
+                <div class="planet-card mercury">
+                    <div class="planet-orbit">
+                        <div class="planet"></div>
+                    </div>
+                    <h3>Mercury</h3>
+                    <p>Closest to Sun • 88 Earth days orbit</p>
+                </div>
+                <div class="planet-card venus">
+                    <div class="planet-orbit">
+                        <div class="planet"></div>
+                    </div>
+                    <h3>Venus</h3>
+                    <p>Hottest planet • 900°F surface</p>
+                </div>
+                <div class="planet-card earth">
+                    <div class="planet-orbit">
+                        <div class="planet"></div>
+                    </div>
+                    <h3>Earth</h3>
+                    <p>Only life known • 71% water</p>
+                </div>
+                <div class="planet-card mars">
+                    <div class="planet-orbit">
+                        <div class="planet"></div>
+                    </div>
+                    <h3>Mars</h3>
+                    <p>Red Planet • Largest volcano</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rest remains same... -->
+    <section id="galaxy" class="galaxy">
+        <div class="container">
+            <h2 class="section-title">Milky Way Galaxy</h2>
+            <div class="nebula"></div>
+            <div class="galaxy-content">
+                <h3>Our Home Galaxy</h3>
+                <p>100,000 light years across • Spiral shaped!</p>
+                <div class="stats">
+                    <div class="stat">
+                        <span class="number" data-target="400">0</span>
+                        <span>Billion Stars</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number" data-target="100000">0</span>
+                        <span>Light Years Wide</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Join Space Adventure</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Launch 🚀</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 SpaceXplore. Explore the Universe! 🌌</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
